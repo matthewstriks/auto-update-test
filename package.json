@@ -9,12 +9,18 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
   },
   "keywords": [],
   "author": {
     "name": "Matthew Striks",
     "email": "matthew@striks.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewstriks/auto-update-test.git"
   },
   "license": "MIT",
   "dependencies": {
